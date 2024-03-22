@@ -34,4 +34,5 @@ if __name__ == "__main__":
 
     key = generate_pgp_keys(email, passphrase)
     print("PGP keys generated successfully.")
+    print(f"Filename is stored in {output_file}_key_id.txt")
     export_keys(key.fingerprint, output_file, passphrase)
